@@ -1,1 +1,11 @@
-<p>movie-list works!</p>
+<h2>Peliculas</h2>
+
+<app-movie-item
+  *ngFor="let m of movies"
+  [movie]="m"
+  (movieSelected)="onMovieSelected($event)">
+</app-movie-item>
+
+<p *ngIf="selectedMovie" class="seleccion">
+  Seleccionaste: <b>{{ selectedMovie }}</b>
+</p>

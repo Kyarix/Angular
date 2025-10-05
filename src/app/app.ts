@@ -5,13 +5,14 @@ import { Perfil } from './perfil/perfil';
 import { Productos } from './productos/productos';
 import { Header } from './header/header';
 import { Footer } from './footer/footer';
+import { MovieList } from './movies/movie-list/movie-list';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Mensajes, Perfil, Productos, Header, Footer],
+  imports: [RouterOutlet, Mensajes, Perfil, Productos, Header, Footer, MovieList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
