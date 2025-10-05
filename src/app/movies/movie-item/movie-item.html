@@ -1,0 +1,12 @@
+<article class="card">
+    <h4>{{ movie.title }} ({{ movie.year }})</h4>
+    
+    <p *ngIf="movie.description?.trim()">
+
+        {{ movie.description }}
+
+    </p>
+
+    <button (click)="selectMovie()">Seleccionar</button>
+
+</article>
